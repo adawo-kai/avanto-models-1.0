@@ -1,0 +1,1 @@
+# avanto-models-1.0

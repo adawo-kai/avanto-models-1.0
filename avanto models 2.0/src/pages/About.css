@@ -1,0 +1,410 @@
+.about-page {
+  padding: 120px 0 80px;
+  animation: fadeIn 0.8s ease;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+  padding: 60px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intro-content h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.intro-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.intro-stats .stat-item {
+  text-align: center;
+  padding: 20px;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.intro-stats .stat-number {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.intro-stats .stat-label {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Ценности */
+.about-values {
+  margin-bottom: 80px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-card {
+  text-align: center;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color-accent);
+}
+
+.value-card h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.value-card p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Таймлайн */
+.about-timeline {
+  margin-bottom: 80px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 60px;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  top: 0;
+}
+
+.timeline-item.left::before {
+  right: -6px;
+}
+
+.timeline-item.right::before {
+  left: -6px;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.timeline-year {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.timeline-content p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Команда */
+.about-team {
+  margin-bottom: 80px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-card {
+  text-align: center;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--color-background);
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-image .placeholder-image {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.team-info h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+.team-position {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.team-experience {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.team-bio {
+  color: var(--color-text);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Партнеры */
+.about-partners {
+  margin-bottom: 80px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.partner-item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-secondary);
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  transition: all 0.3s ease;
+}
+
+.partner-item:hover {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+/* CTA секция */
+.about-cta {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--color-primary), #1a1a2e);
+  border-radius: var(--radius-lg);
+  color: var(--color-secondary);
+}
+
+.cta-content h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.cta-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .intro-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 100px 0 60px;
+  }
+
+  .about-intro {
+    margin-bottom: 60px;
+    padding: 40px 0;
+  }
+
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .intro-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item::before {
+    left: 14px;
+  }
+
+  .team-grid,
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-cta {
+    padding: 60px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid,
+  .team-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-item {
+    height: 80px;
+  }
+}

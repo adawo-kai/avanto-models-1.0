@@ -1,0 +1,311 @@
+.school-page {
+  padding: 120px 0 80px;
+  animation: fadeIn 0.8s ease;
+}
+
+.school-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.school-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 60px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intro-content h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.intro-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 32px;
+}
+
+.intro-image {
+  position: relative;
+  min-height: 300px;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.placeholder-image {
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+/* Курсы */
+.school-courses {
+  margin-bottom: 80px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.course-header h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  flex: 1;
+}
+
+.course-duration {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.course-price {
+  margin-bottom: 20px;
+}
+
+.price-amount {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.course-description {
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.course-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.course-features li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+  font-size: 0.875rem;
+}
+
+.course-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.course-actions {
+  margin-top: auto;
+}
+
+/* Преподаватели */
+.school-teachers {
+  margin-bottom: 80px;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.teacher-card {
+  text-align: center;
+  padding: 30px;
+}
+
+.teacher-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--color-background);
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.teacher-image .placeholder-image {
+  font-size: 3rem;
+}
+
+.teacher-info h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.teacher-role {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.teacher-experience {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Преимущества */
+.school-benefits {
+  margin-bottom: 80px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--color-accent);
+}
+
+.benefit-item h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.benefit-item p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* CTA секция */
+.school-cta {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--color-primary), #1a1a2e);
+  border-radius: var(--radius-lg);
+  color: var(--color-secondary);
+}
+
+.cta-content h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.cta-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .school-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .intro-image {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .school-page {
+    padding: 100px 0 60px;
+  }
+
+  .school-header {
+    margin-bottom: 60px;
+  }
+
+  .school-intro {
+    margin-bottom: 60px;
+    padding: 40px 0;
+  }
+
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .courses-grid,
+  .teachers-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .school-cta {
+    padding: 60px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .course-duration {
+    margin-left: 0;
+  }
+
+  .benefit-item {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,269 @@
+.models-page {
+  padding: 120px 0 80px;
+  animation: fadeIn 0.8s ease;
+}
+
+.models-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-title {
+  font-family: var(--font-secondary);
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.models-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  min-width: 120px;
+}
+
+.models-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.model-grid-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.model-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.models-cta {
+  text-align: center;
+  padding: 80px 0;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.models-cta h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.models-cta p {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Модалка модели */
+.model-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.model-modal-image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.model-modal-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.model-modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.model-modal-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 24px;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.model-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.model-stat .stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.model-stat .stat-value {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.model-modal-bio h3,
+.model-modal-experience h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.model-modal-bio p {
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.model-modal-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.model-modal-experience li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.model-modal-experience li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.model-modal-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .models-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .model-modal {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .models-page {
+    padding: 100px 0 60px;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .models-stats {
+    gap: 40px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .models-cta {
+    padding: 60px 0;
+  }
+
+  .models-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .models-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .models-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .models-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .model-modal-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .model-modal-actions {
+    flex-direction: column;
+  }
+}
